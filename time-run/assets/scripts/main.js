@@ -63,6 +63,9 @@ class Game {
             if (e.key === 'Shift' || e.key.toLowerCase() === 'c') {
                 this.player.startCharge();
             }
+            if(e.key.toLowerCase() === 'r') {
+                this.resize(window.innerWidth, window.innerHeight);
+            }
         });
         window.addEventListener('keyup', e => {
             this.player.wingsUp();
